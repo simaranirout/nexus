@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8&!5=dmzu1ripl@ku6fplfi+@!adkeh!caug1$+r9!m%o#u_cu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["nexususa.herokuapp.com","localhost"]
 
