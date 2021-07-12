@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstallJOb</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}" />
+    <style>
+      #id_contractor,
+      #id_company {
+        width: 100%;
+        border: 1px solid rgb(206, 205, 205);
+        border-radius: 2px;
+      }
+      .navbar-nav {
+        margin-left: auto;
+      }
+      .footer-copyright {
+        margin-top: 10px;
+        height: 40px;
+      }
+      hr {
+        margin: 0;
+      }
+      .navbar-brand {
+        padding-left: 20px;
+        font-weight: bold;
+      }
+      .nav-item {
+        padding-right: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark">
+      <a class="navbar-brand fs-3 text-danger" href="#">Nexus USA</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-danger" href="/companies/">
+            Companies
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-danger" href="/"> Contractor </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-danger" href="/job"> Job </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container mt-5">
+      <h2 class="text-center alert alert-danger">Jobs Management</h2>
+      {% block content %} {% endblock content %}
+    </div>
+    <footer class="page-footer center-on-small-only stylish-color-dark">
+      <br />
+      <hr />
+      <div class="footer-copyright bg-secondary text-dark">
+        <div class="container-fluid text-center">
+          © 2018 Copyright:<a
+            href="#"
+            target="_blank"
+            style="text-decoration: none"
+            class="text-dark"
+          >
+            Nexus
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'enroll/js/jquery.js' %}"></script>
+    <script src="{% static 'enroll/js/proper.js' %}"></script>
+    <script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+  </body>
+</html>
